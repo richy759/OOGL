@@ -126,7 +126,8 @@ namespace GL
 			RGB = GL_RGB,
 			BGR = GL_BGR,
 			RGBA = GL_RGBA,
-			BGRA = GL_BGRA
+			BGRA = GL_BGRA,
+			RG = GL_RG
 		};
 	}
 
