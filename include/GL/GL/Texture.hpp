@@ -199,7 +199,7 @@ namespace GL
 		Texture();
 		Texture( const Texture& other );
 		Texture( const Image& image, InternalFormat::internal_format_t internalFormat = InternalFormat::RGBA );
-		Texture(const void* data, int width, int height, InternalFormat::internal_format_t internalFormat);
+		Texture(const void* data, int width, int height, InternalFormat::internal_format_t internalFormat, Format::format_t format);
 
 		~Texture();
 
