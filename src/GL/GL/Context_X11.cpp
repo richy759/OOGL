@@ -63,8 +63,8 @@ namespace GL
 
 		// Create OpenGL 3.2 context
 		int attribs[] = {
-			GLX_CONTEXT_MAJOR_VERSION_ARB, 3,
-			GLX_CONTEXT_MINOR_VERSION_ARB, 2,
+			GLX_CONTEXT_MAJOR_VERSION_ARB, 4,
+			GLX_CONTEXT_MINOR_VERSION_ARB, 5,
 			GLX_CONTEXT_PROFILE_MASK_ARB, GLX_CONTEXT_CORE_PROFILE_BIT_ARB,
 			0
 		};
@@ -80,6 +80,7 @@ namespace GL
 		this->display = display;
 		this->window = window;
 		this->owned = true;
+		this->glxWindow = 0;
 
 		glGetIntegerv( GL_VIEWPORT, (GLint*)&defaultViewport );
 

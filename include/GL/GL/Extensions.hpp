@@ -468,6 +468,15 @@ extern GLBEGINTRANSFORMFEEDBACK glBeginTransformFeedback;
 typedef void ( APIENTRYP GLENDTRANSFORMFEEDBACK ) ();
 extern GLENDTRANSFORMFEEDBACK glEndTransformFeedback;
 
+typedef void* ( APIENTRYP GLMAPBUFFER ) ( GLenum target, GLenum access );
+extern GLMAPBUFFER glMapBuffer;
+
+typedef void ( APIENTRYP GLUNMAPBUFFER ) ( GLenum target );
+extern GLUNMAPBUFFER glUnmapBuffer;
+
+//GLAPI void *APIENTRY glMapBuffer (GLenum target, GLenum access);
+//GLAPI GLboolean APIENTRY glUnmapBuffer (GLenum target);
+
 /*
 	Extension loader
 */

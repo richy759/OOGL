@@ -119,6 +119,9 @@ GLBINDBUFFERBASE glBindBufferBase;
 GLBEGINTRANSFORMFEEDBACK glBeginTransformFeedback;
 GLENDTRANSFORMFEEDBACK glEndTransformFeedback;
 
+GLMAPBUFFER glMapBuffer;
+GLUNMAPBUFFER glUnmapBuffer;
+
 namespace GL
 {
 	bool extensionsLoaded = false;
@@ -234,5 +237,8 @@ namespace GL
 		glBindBufferBase = (GLBINDBUFFERBASE)LoadExtension( "glBindBufferBase" );
 		glBeginTransformFeedback = (GLBEGINTRANSFORMFEEDBACK)LoadExtension( "glBeginTransformFeedback" );
 		glEndTransformFeedback = (GLENDTRANSFORMFEEDBACK)LoadExtension( "glEndTransformFeedback" );
+
+		glMapBuffer = (GLMAPBUFFER)LoadExtension( "glMapBuffer" );
+		glUnmapBuffer = (GLUNMAPBUFFER)LoadExtension( "glUnmapBuffer" );
 	}
 }
