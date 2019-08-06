@@ -474,6 +474,10 @@ extern GLMAPBUFFER glMapBuffer;
 typedef void ( APIENTRYP GLUNMAPBUFFER ) ( GLenum target );
 extern GLUNMAPBUFFER glUnmapBuffer;
 
+typedef void ( APIENTRYP GLBINDTEXIMAGEEXT ) ( Display* dpy, GLXDrawable drawable, int buffer, const int *attrib_list );
+extern GLBINDTEXIMAGEEXT glXBindTexImageEXT;
+
+
 //GLAPI void *APIENTRY glMapBuffer (GLenum target, GLenum access);
 //GLAPI GLboolean APIENTRY glUnmapBuffer (GLenum target);
 

@@ -165,6 +165,7 @@ namespace GL
 		void UseProgram( const Program& program );
 
 		void BindTexture( const Texture& texture, uchar unit );
+		void BindTexture( GLuint texture, uchar unit );
 		
 		void BindFramebuffer( const Framebuffer& framebuffer );
 		void BindFramebuffer();

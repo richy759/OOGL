@@ -80,6 +80,12 @@ namespace GL
 		glBindTexture( GL_TEXTURE_2D, texture );
 	}
 
+	void Context::BindTexture( GLuint texture, uchar unit )
+	{
+		glActiveTexture( GL_TEXTURE0 + unit );
+		glBindTexture( GL_TEXTURE_2D, texture );
+	}
+
 	void Context::BindFramebuffer( const Framebuffer& framebuffer )
 	{
 		glBindFramebuffer( GL_DRAW_FRAMEBUFFER, framebuffer );

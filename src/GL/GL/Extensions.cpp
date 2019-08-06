@@ -122,6 +122,8 @@ GLENDTRANSFORMFEEDBACK glEndTransformFeedback;
 GLMAPBUFFER glMapBuffer;
 GLUNMAPBUFFER glUnmapBuffer;
 
+GLBINDTEXIMAGEEXT glXBindTexImageEXT;
+
 namespace GL
 {
 	bool extensionsLoaded = false;
@@ -240,5 +242,7 @@ namespace GL
 
 		glMapBuffer = (GLMAPBUFFER)LoadExtension( "glMapBuffer" );
 		glUnmapBuffer = (GLUNMAPBUFFER)LoadExtension( "glUnmapBuffer" );
+
+		glXBindTexImageEXT = (GLBINDTEXIMAGEEXT)LoadExtension("glXBindTexImageEXT");
 	}
 }
