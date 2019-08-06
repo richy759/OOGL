@@ -84,6 +84,11 @@ namespace GL
 		int GetMouseX();
 		int GetMouseY();
 
+#if defined( OOGL_PLATFORM_LINUX )
+		Display* GetDisplay();
+		int	GetScreen();
+#endif
+
 		bool IsMouseButtonDown( MouseButton::mouse_button_t button );
 		bool IsKeyDown( Key::key_t key );
 

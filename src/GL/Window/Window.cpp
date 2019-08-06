@@ -63,6 +63,18 @@ namespace GL
 		return mousey;
 	}
 
+#if defined( OOGL_PLATFORM_LINUX )
+	Display* Window::GetDisplay()
+	{
+		return display;
+	}
+
+	int Window::GetScreen()
+	{
+		return screen;
+	}
+#endif
+
 	bool Window::IsMouseButtonDown( MouseButton::mouse_button_t button )
 	{
 		if ( button >= sizeof( mouse ) / sizeof( bool ) ) return false;
